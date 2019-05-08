@@ -1,8 +1,12 @@
 # DlnFelix
 基于JSContext与Aspects对热更新的一点理解
+
 本文是因为受到 https://www.jianshu.com/p/d7b24016854e 的启发，于是对热修复跟热更新产生了一点兴趣
+
 可能个人水平不足的原因，并不能理解有一部分怎么使用，其中有利用JSContext调用iOS的方法到时候，传了id对象，
+
 据我所知JSContext与iOS交互靠的是字符串，没办法传对象
+
 于是乎按照自己的理解，对代码重新改了一下
 
 1.将id对象改为了json字符串，调用的时候根据json字符串的内容与iOS端交互
